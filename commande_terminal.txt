@@ -1,0 +1,19 @@
+démarrer le server du front: yarn serve
+
+démarrer l'api: node App.js
+
+exemple d'appel api en front : 
+async function() {
+	const data = {
+		firstname:this.firstname
+		lastname:this.lastname
+		etc...
+	}
+	const response = await axios.post("http://localhost/reservations",data)
+	if(response.data.messageError){
+		this.errMessage = resonse.data.messageError
+	}else {
+		this.message = response.data.message
+	}
+
+}
