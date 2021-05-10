@@ -2,8 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Experiences from '../views/Experiences.vue'
+import Experience from '../views/Experience.vue'
 import Contact from '../views/Contact.vue'
 import Tarifs from '../views/Tarifs.vue'
+import Reservation from '../views/Reservation.vue'
 
 Vue.use(VueRouter)
 
@@ -19,9 +21,19 @@ const routes = [
     component: Experiences
   },
   {
+    path: '/experience',
+    name: 'Experience',
+    component: Experience
+  },
+  {
     path: '/contact',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/reservation',
+    name: 'Reservation',
+    component: Reservation
   },
   {
     path: '/tarifs',

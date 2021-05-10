@@ -2,7 +2,7 @@
     <div class="container-footer">
         <div class="container-cadeaux">
             <div>
-                <button type="button" class="btn btn-primary btn-lg">Reserver</button>
+                <button type="button" class="btn-footer btn-primary btn-lg" @click="$router.push('/reservation')">Reserver</button>
             </div>
             <div class="cadeau">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,14 +23,14 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">j'accepte les conditions</label>
                 </div>
-                <button type="submit" class="btn btn-primary">Je m'inscris</button>
+                <button type="submit" class="btn-footer btn-primary btn-lg">Je m'inscris</button>
                 </form>
         </div>
         <div>
             <h4>Contact</h4>
             <p>2 Allée des chevreuils<br>69003 Lyon</p>
-            <p>09 78 56 63 25</p>
-            <p>travel-xperience@gmail.com</p>
+            <p>07 81 79 07 92</p>
+            <p>contact@travel-xperience.org</p>
         </div>
         <div class="container-rs">
             <h4>Reseaux sociaux</h4>
@@ -77,5 +77,9 @@ export default {
     .imageRS{
         width: 3em;
         height: 3em;
+    }
+    .btn-footer{
+        background-color: #003F72 !important;
+        border: none !important;
     }
 </style>

@@ -5,9 +5,6 @@
       <section class="section-video">
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KPfLWwXUReY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </section>
-      <div class="text-center">
-        <button type="button" class="boutton-blanc-border btn btn-primary btn-lg bouton-video">Je reserve</button>
-      </div>
     </div>
 
 
@@ -17,7 +14,7 @@
           <h2 class="titre">Description rapide du concept</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc tellus, porta sed rutrum in, ultrices sed purus. Donec vel massa accumsan, faucibus urna eu, hendrerit nunc. Ut vel lacus id felis tincidunt congue eu sed lorem. Aenean ut arcu non lorem tristique volutpat a non risus. Suspendisse porta sagittis nunc, vitae elementum orci fringilla a. Nulla varius rutrum convallis. Suspendisse laoreet consectetur dui. Phasellus erat leo, lobortis non mauris iaculis, ornare efficitur velit. Sed elementum nulla sed scelerisque mollis. Donec vitae ornare dui. Morbi convallis, magna vitae ultrices aliquam, magna eros suscipit diam, nec sagittis ipsum ipsum in turpis. Phasellus leo nibh, dictum et massa a, lacinia maximus dolor. Nulla scelerisque lobortis elit, non accumsan mi laoreet at.</p>
         </div>
-        <div class="text-center">
+        <div class="button-end">
           <button type="button" class="boutton-blanc btn btn-primary btn-lg">Plus de details</button>
         </div>
         <div>
@@ -56,18 +53,19 @@
 
 
     <div class="autre">
-      <div class="contenu">
+      <div class="contenu-autre">
         <div>
           <img class="imageContainer" src="../assets/images/site_photos/accueil2.png" alt="photo concept">
+        </div>
+        <div class="text-center">
+          <button type="button" class="boutton-blanc btn btn-primary btn-lg">Plus de details</button>
         </div>
         <div class="descriptionTexte">
           <h2 class="titre">Autres</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc tellus, porta sed rutrum in, ultrices sed purus. Donec vel massa accumsan, faucibus urna eu, hendrerit nunc. Ut vel lacus id felis tincidunt congue eu sed lorem. Aenean ut arcu non lorem tristique volutpat a non risus. Suspendisse porta sagittis nunc, vitae elementum orci fringilla a. Nulla varius rutrum convallis. Suspendisse laoreet consectetur dui. Phasellus erat leo, lobortis non mauris iaculis, ornare efficitur velit. Sed elementum nulla sed scelerisque mollis. Donec vitae ornare dui. Morbi convallis, magna vitae ultrices aliquam, magna eros suscipit diam, nec sagittis ipsum ipsum in turpis. Phasellus leo nibh, dictum et massa a, lacinia maximus dolor. Nulla scelerisque lobortis elit, non accumsan mi laoreet at.</p>
         </div>
       </div>
-      <div class="text-center">
-        <button type="button" class="boutton-blanc btn btn-primary btn-lg">Plus de details</button>
-      </div>
+      
     </div>
   </div>
 </template>
@@ -89,7 +87,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #003F72;
   margin-top: 60px;
 }
 
@@ -98,13 +96,15 @@
   justify-content: space-between;
   padding-left: 10rem;
 }
+.contenu-autre{
+  display: flex;
+  justify-content: space-between;
+}
 
 .imageContainer{
-  width: 45%;
+  width: 35em;
 }
-.text-center{
-  
-}
+
 
 .images{
   width: 100%;
@@ -127,10 +127,10 @@
 }
 
 .descriptionTexte{
-  width: 45%;
+  width: 29%;
 }
 .section-video{
-  height: 90vh;
+  height: 96vh;
 }
 .boutton-video{
   position: absolute;
@@ -160,6 +160,9 @@
 }
 .titreExperience{
   margin: 4rem;
+}
+.button-end{
+  align-items: end;
 }
 
 </style>
