@@ -3,18 +3,18 @@
         <div class="yellowBox">
             <div class="formulaire">
                 <h1>Reservation</h1>
-                <form>
+                <form   @submit.prevent="sendForm">
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Nom*</label>
-                        <input class="form-control" type="text">
+                        <input v-model="nom" class="form-control" type="text">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Téléphone*</label>
-                        <input class="form-control" type="text">
+                        <input v-model="tel" class="form-control" type="text">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Nombre de participant</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <select v-model="nbParticipant" class="form-control" id="exampleFormControlSelect1">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -24,7 +24,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlSelect1">Séléctionnez une date</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <select v-model="experience" class="form-control" id="exampleFormControlSelect1">
                         <option>Bali</option>
                         <option>New York</option>
                         <option>Machu pichu</option>
@@ -36,13 +36,13 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Séléctionnez une date*</label>
-                        <input class="form-control" type="date">
+                        <input v-model="date" class="form-control" type="date">
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Séléctionnez une date*</label>
-                        <input class="form-control" type="time">
+                        <input v-model="heure" class="form-control" type="time">
                     </div>
-                    <button type="button" class="boutton-blanc btn btn-primary btn-lg">Je Reserve</button>
+                    <button @click="sendForm" type="button" class="boutton-blanc btn btn-primary btn-lg">Je Reserve</button>
                 </form>
             </div>
             <div>
@@ -51,6 +51,41 @@
         </div>
     </div>
 </template>
+
+<script>
+import axios from "axios"
+export default {
+    data(){
+        return{
+            nom: "",
+            tel: "",
+            nbParticipant: "",
+            experience: "",
+            date: "",
+            heure: "",
+        }
+    },
+    methods:{
+        async sendForm() {
+            const data = {
+                lastName:this.nom,
+                numero:this.tel,
+                firstName:this.nbParticipant,
+                date_reservation:this.date,
+                experience:this.experience,
+                heure:this.heure,
+            }
+            const response = await axios.post("http://localhost:6929/reservations",data)
+            if(response.data.messageError){
+                this.errMessage = response.data.messageError
+            }else {
+                this.message = response.data.message
+            }
+
+        }
+    }
+}
+</script>
 
 <style>
 .yellowBox{

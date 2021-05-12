@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container-fluid">
         <span class="col-4">
-            <router-link class="navbar-brand col-4" to="/">Travel Xperience</router-link>
+            <router-link class="navbar-brand col-4" to="/"><img class="logoContainer" src="../assets/images/logo.png" alt="photo concept"></router-link>
         </span>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
