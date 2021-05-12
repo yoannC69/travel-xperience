@@ -1,6 +1,6 @@
 <template>
     <div class="expériences">
-      <div class="contenu">
+      <div class="contenu-component">
         <div class="petitContainer">
           <h3>Bali</h3>
           <img class="images" src="../assets/images/site_photos/experience1.png" alt="photo concept">
@@ -31,18 +31,22 @@ export default {
 </script>
 
 <style>
-.boutton-jaune-border {
-  background-color: #FFD008 !important;
-  border: none !important;
-  margin-bottom: 3rem;
-  margin-top: 2rem;
-  color: black !important;
-  border-radius: 50px !important;
-  width: 13rem;
-  border-color: black !important;
-}
-.expériences {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
+    .boutton-jaune-border {
+        background-color: #FFD008 !important;
+        border: none !important;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+        color: black !important;
+        border-radius: 50px !important;
+        width: 13rem;
+        border-color: black !important;
+    }
+    .expériences {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .contenu-component {
+        display: flex;
+        justify-content: space-around;
+    }
 </style>

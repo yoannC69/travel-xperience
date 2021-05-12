@@ -1,73 +1,69 @@
 <template>
   
-  <div class="grosContainer">
+<div class="grosContainer">
     <div class="video">
-      <section class="section-video">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KPfLWwXUReY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </section>
+        <section class="section-video">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KPfLWwXUReY?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
     </div>
 
 
     <div class="description">
-      <div class="contenu">
-        <div class="descriptionTexte">
-          <h2 class="titre">Description rapide du concept</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc tellus, porta sed rutrum in, ultrices sed purus. Donec vel massa accumsan, faucibus urna eu, hendrerit nunc. Ut vel lacus id felis tincidunt congue eu sed lorem. Aenean ut arcu non lorem tristique volutpat a non risus. Suspendisse porta sagittis nunc, vitae elementum orci fringilla a. Nulla varius rutrum convallis. Suspendisse laoreet consectetur dui. Phasellus erat leo, lobortis non mauris iaculis, ornare efficitur velit. Sed elementum nulla sed scelerisque mollis. Donec vitae ornare dui. Morbi convallis, magna vitae ultrices aliquam, magna eros suscipit diam, nec sagittis ipsum ipsum in turpis. Phasellus leo nibh, dictum et massa a, lacinia maximus dolor. Nulla scelerisque lobortis elit, non accumsan mi laoreet at.</p>
+        <div class="contenu-description">
+            <div class="descriptionTexte">
+                <h2 class="titre">Travel Xperience : le voyage en immersion</h2>
+                <p>Avec Travel Xperience, plongez dans une expérience hors du commun. sed rutrum in, ultrices sed purus. Donec vel massa accumsan, faucibus urna eu, hendrerit nunc. Ut vel lacus id felis tincidunt congue eu sed lorem. Aenean ut arcu non lorem tristique volutpat a non risus. Suspendisse porta sagittis nunc, vitae elementum orci fringilla a. Nulla varius rutrum convallis. Suspendisse laoreet consectetur dui. Phasellus erat leo, lobortis non mauris iaculis, ornare efficitur velit. Sed elementum nulla sed scelerisque mollis. Donec vitae ornare dui. Morbi convallis, magna vitae ultrices aliquam, magna eros suscipit diam, nec sagittis ipsum ipsum in turpis. Phasellus leo nibh, dictum et massa a, lacinia maximus dolor. Nulla scelerisque lobortis elit, non accumsan mi laoreet at.</p>
+            </div>
+            <div class="button-end">
+                <button type="button" class="boutton-blanc btn btn-primary btn-lg">Plus de details</button>
+            </div>
+                <div class="container-image-home">
+                <img class="imageContainer" src="../assets/images/site_photos/accueil1.png" alt="photo concept">
+            </div>
         </div>
-        <div class="button-end">
-          <button type="button" class="boutton-blanc btn btn-primary btn-lg">Plus de details</button>
-        </div>
-        <div>
-          <img class="imageContainer" src="../assets/images/site_photos/accueil1.png" alt="photo concept">
-        </div>
-      </div>
-      
     </div>
-
 
     <div class="expériences">
-      <h2 class="titreExperience">Experiences</h2>
-      <div class="expériences">
-        <div class="contenu">
-          <div class="petitContainer">
-            <h3>experience 1</h3>
-            <img class="images" src="../assets/images/site_photos/experience1.png" alt="photo concept">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc tellus, porta sed rutrum in, ultrices sed</p>
-          </div>
-          <div class="petitContainer">
-            <h3>experience 2</h3>
-            <img class="images" src="../assets/images/site_photos/experience2.png" alt="photo concept">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc tellus, porta sed rutrum in, ultrices sed</p>
-          </div>
-          <div class="petitContainer">
-            <h3>experience 3</h3>
-            <img class="images" src="../assets/images/site_photos/experience3.png" alt="photo concept">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc tellus, porta sed rutrum in, ultrices sed</p>
-          </div>
+        <h2 class="titreExperience">Experiences</h2>
+            <div class="expériences">
+                <div class="contenu-home">
+                    <div class="petitContainer">
+                        <h3>experience 1</h3>
+                        <img class="images" src="../assets/images/site_photos/experience1.png" alt="photo concept">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc tellus, porta sed rutrum in, ultrices sed</p>
+                    </div>
+                    <div class="petitContainer">
+                        <h3>experience 2</h3>
+                        <img class="images" src="../assets/images/site_photos/experience2.png" alt="photo concept">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc tellus, porta sed rutrum in, ultrices sed</p>
+                    </div>
+                    <div class="petitContainer">
+                        <h3>experience 3</h3>
+                        <img class="images" src="../assets/images/site_photos/experience3.png" alt="photo concept">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc tellus, porta sed rutrum in, ultrices sed</p>
+                    </div>
+                </div>
+            <div class="text-center-home">
+                <button type="button" class="boutton-blanc-border btn btn-primary btn-lg">En savoir plus</button>
+            </div>
         </div>
-        <div class="text-center">
-          <button type="button" class="boutton-blanc-border btn btn-primary btn-lg">En savoir plus</button>
-        </div>
-      </div>
     </div>
-
 
     <div class="autre">
-      <div class="contenu-autre">
-        <div>
-          <img class="imageContainer" src="../assets/images/site_photos/accueil2.png" alt="photo concept">
+        <div class="contenu-autre">
+            <div class="container-image-home2">
+                <img class="image-home2" src="../assets/images/site_photos/accueil2.png" alt="photo concept">
+            </div>
+            <div class="btn-container-home">
+                <button type="button" class="boutton-blanc btn btn-primary btn-lg">Plus de details</button>
+            </div>
+            <div class="descriptionTexte">
+                <h2 class="titre">Autres</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc tellus, porta sed rutrum in, ultrices sed purus. Donec vel massa accumsan, faucibus urna eu, hendrerit nunc. Ut vel lacus id felis tincidunt congue eu sed lorem. Aenean ut arcu non lorem tristique volutpat a non risus. Suspendisse porta sagittis nunc, vitae elementum orci fringilla a. Nulla varius rutrum convallis. Suspendisse laoreet consectetur dui. Phasellus erat leo, lobortis non mauris iaculis, ornare efficitur velit. Sed elementum nulla sed scelerisque mollis. Donec vitae ornare dui. Morbi convallis, magna vitae ultrices aliquam, magna eros suscipit diam, nec sagittis ipsum ipsum in turpis. Phasellus leo nibh, dictum et massa a, lacinia maximus dolor. Nulla scelerisque lobortis elit, non accumsan mi laoreet at.</p>
+            </div>
         </div>
-        <div class="text-center">
-          <button type="button" class="boutton-blanc btn btn-primary btn-lg">Plus de details</button>
-        </div>
-        <div class="descriptionTexte">
-          <h2 class="titre">Autres</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc tellus, porta sed rutrum in, ultrices sed purus. Donec vel massa accumsan, faucibus urna eu, hendrerit nunc. Ut vel lacus id felis tincidunt congue eu sed lorem. Aenean ut arcu non lorem tristique volutpat a non risus. Suspendisse porta sagittis nunc, vitae elementum orci fringilla a. Nulla varius rutrum convallis. Suspendisse laoreet consectetur dui. Phasellus erat leo, lobortis non mauris iaculis, ornare efficitur velit. Sed elementum nulla sed scelerisque mollis. Donec vitae ornare dui. Morbi convallis, magna vitae ultrices aliquam, magna eros suscipit diam, nec sagittis ipsum ipsum in turpis. Phasellus leo nibh, dictum et massa a, lacinia maximus dolor. Nulla scelerisque lobortis elit, non accumsan mi laoreet at.</p>
-        </div>
-      </div>
-      
     </div>
-  </div>
+</div>
 </template>
 
 <script>
@@ -91,20 +87,30 @@
   margin-top: 60px;
 }
 
-.contenu{
+.contenu-description{
   display: flex;
   justify-content: space-between;
-  padding-left: 10rem;
+  margin-left: 10rem;
+  margin-bottom : 5rem;
+  margin-right: auto;
+  position: relative;
+}
+.contenu-home{
+  display: flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 .contenu-autre{
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .imageContainer{
   width: 35em;
 }
-
 
 .images{
   width: 100%;
@@ -118,7 +124,6 @@
 .description{
   background-color: #003F72;
   color: white;
-  height: 30em;
 }
 
 .autre{
@@ -127,7 +132,8 @@
 }
 
 .descriptionTexte{
-  width: 29%;
+  width: 35%;
+  padding-right:5em;
 }
 .section-video{
   height: 96vh;
@@ -162,8 +168,37 @@
   margin: 4rem;
 }
 .button-end{
-  align-items: end;
+    display: flex;
+    align-self: flex-end;
+    width: 60%;
 }
+.container-image-home{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 99;
+}
+
+.btn-container-home{
+    width:30%;
+    align-self: flex-end;
+    text-align: center;
+}
+
+.image-home2{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99;
+    width: 35em;
+}
+.container-image-home2{
+    position: relative;
+    width:35%;
+}
+
+
+
 
 </style>
 
