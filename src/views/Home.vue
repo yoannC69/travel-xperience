@@ -11,11 +11,11 @@
     <div class="description">
         <div class="contenu-description">
             <div class="descriptionTexte">
-                <h2 class="titre">Travel Xperience : le voyage en immersion</h2>
-                <p>Avec Travel Xperience, plongez dans une expérience hors du commun. sed rutrum in, ultrices sed purus. Donec vel massa accumsan, faucibus urna eu, hendrerit nunc. Ut vel lacus id felis tincidunt congue eu sed lorem. Aenean ut arcu non lorem tristique volutpat a non risus. Suspendisse porta sagittis nunc, vitae elementum orci fringilla a. Nulla varius rutrum convallis. Suspendisse laoreet consectetur dui. Phasellus erat leo, lobortis non mauris iaculis, ornare efficitur velit. Sed elementum nulla sed scelerisque mollis. Donec vitae ornare dui. Morbi convallis, magna vitae ultrices aliquam, magna eros suscipit diam, nec sagittis ipsum ipsum in turpis. Phasellus leo nibh, dictum et massa a, lacinia maximus dolor. Nulla scelerisque lobortis elit, non accumsan mi laoreet at.</p>
+                <h1 class="titre">Travel Xperience : le voyage en immersion</h1>
+                <p>Avec Travel Xperience, plongez dans une expériencehors du commun.Découvrez une palette de 6 voyages tous plus intensesles uns que lesautres. Envolez-vous pour Bali, Tokyo, New-York, l'Antarctique,un safari enTanzanie ou encore la découverte du Machu Picchu. Découvrez plus en détail notre offre entre visitesculturelles, découvertesculinaires et escapades à couper le souffle </p>
             </div>
             <div class="button-end">
-                <button type="button" class="boutton-blanc btn btn-primary btn-lg">Plus de details</button>
+                <button type="button" class="boutton-blanc btn btn-primary btn-lg" @click="$router.push('/about')">Plus de details</button>
             </div>
                 <div class="container-image-home">
                 <img class="imageContainer" src="../assets/images/site_photos/accueil1.png" alt="photo concept">
@@ -28,23 +28,23 @@
             <div class="expériences">
                 <div class="contenu-home">
                     <div class="petitContainer">
-                        <h3>experience 1</h3>
+                        <h3>Bali</h3>
                         <img class="images" src="../assets/images/site_photos/experience1.png" alt="photo concept">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc tellus, porta sed rutrum in, ultrices sed</p>
+                        <p>Laissez-vous séduire par ce petit coin de paradis... Entre ses montagnes volcaniques boisées, ses rizières, ses plages et ses récifs coralliens, visitez l’île la plus branchée d’Asie.</p>
                     </div>
                     <div class="petitContainer">
-                        <h3>experience 2</h3>
+                        <h3>New york</h3>
                         <img class="images" src="../assets/images/site_photos/experience2.png" alt="photo concept">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc tellus, porta sed rutrum in, ultrices sed</p>
+                        <p>Mesurez-vous aux plus grands gratte-ciels et aux monuments historiques de la plus belle ville du monde. Fast food, restaurants et gastronomie sauront ainsi ravir vos papilles.</p>
                     </div>
                     <div class="petitContainer">
-                        <h3>experience 3</h3>
+                        <h3>Machu pichu</h3>
                         <img class="images" src="../assets/images/site_photos/experience3.png" alt="photo concept">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc tellus, porta sed rutrum in, ultrices sed</p>
+                        <p>Découvrez un des pays les plus extraordinaires d’Amérique du Sud. C’est au Pérou que vous pourrez contempler l’une des 7 merveilles de la planète au milieu de l’Amazone.</p>
                     </div>
                 </div>
             <div class="text-center-home">
-                <button type="button" class="boutton-blanc-border btn btn-primary btn-lg">En savoir plus</button>
+                <button type="button" class="boutton-blanc-border btn btn-primary btn-lg" @click="$router.push('/experiences')">En savoir plus</button>
             </div>
         </div>
     </div>
@@ -55,11 +55,11 @@
                 <img class="image-home2" src="../assets/images/site_photos/accueil2.png" alt="photo concept">
             </div>
             <div class="btn-container-home">
-                <button type="button" class="boutton-blanc btn btn-primary btn-lg">Plus de details</button>
+                <button type="button" class="boutton-blanc btn btn-primary btn-lg" @click="$router.push('/about')">Plus de details</button>
             </div>
             <div class="descriptionTexte">
-                <h2 class="titre">Autres</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nunc tellus, porta sed rutrum in, ultrices sed purus. Donec vel massa accumsan, faucibus urna eu, hendrerit nunc. Ut vel lacus id felis tincidunt congue eu sed lorem. Aenean ut arcu non lorem tristique volutpat a non risus. Suspendisse porta sagittis nunc, vitae elementum orci fringilla a. Nulla varius rutrum convallis. Suspendisse laoreet consectetur dui. Phasellus erat leo, lobortis non mauris iaculis, ornare efficitur velit. Sed elementum nulla sed scelerisque mollis. Donec vitae ornare dui. Morbi convallis, magna vitae ultrices aliquam, magna eros suscipit diam, nec sagittis ipsum ipsum in turpis. Phasellus leo nibh, dictum et massa a, lacinia maximus dolor. Nulla scelerisque lobortis elit, non accumsan mi laoreet at.</p>
+                <h2 class="titre">Une expérience sensorielle hors du commun</h2>
+                <p>Travel Xperience vous propose une immersion totale ainsi qu’une expérience sensorielle inégalée par la présence de technologies dernier cri ainsi que l’utilisation de différentes techniques d’ambiance pour vivre votre voyage </p>
             </div>
         </div>
     </div>
@@ -97,6 +97,7 @@
 }
 .contenu-home{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
@@ -134,6 +135,7 @@
 .descriptionTexte{
   width: 35%;
   padding-right:5em;
+  padding-bottom: 5rem;
 }
 .section-video{
   height: 96vh;
@@ -143,7 +145,7 @@
   top: 32rem;
 }
 .titre{
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 .boutton-blanc {
@@ -163,6 +165,9 @@
   border-radius: 50px !important;
   width: 13rem;
   border-color: black !important;
+}
+.text-center-home{
+  align-items: center;
 }
 .titreExperience{
   margin: 4rem;
@@ -190,7 +195,7 @@
     bottom: 0px;
     left: 0px;
     z-index: 99;
-    width: 35em;
+    width: 30em;
 }
 .container-image-home2{
     position: relative;

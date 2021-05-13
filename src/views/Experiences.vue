@@ -1,5 +1,5 @@
 <template>
-    <div class="grosContainer">
+    <div class="grosContainer-Experiences">
         <ExperienceComponent/>
         <ExperienceComponent/>
     </div>
@@ -13,4 +13,8 @@ import ExperienceComponent from '../components/ExperienceComponent.vue'
         }
     }
 </script>
+
+<style>
+
+</style>
 

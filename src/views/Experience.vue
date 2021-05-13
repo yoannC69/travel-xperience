@@ -3,14 +3,15 @@
         <div class="contenu-slider">
             <div class="contenu-experience">
                 <h1>Voyage à bali</h1>
-                <p> etbeijbetobbegbq eçgbiejh bebj b</p>
+                <p>Laissez-vous séduire par ce petit coin de paradis... Entre ses montagnes volcaniques boisées, <br>ses rizières, ses plages et ses récifs coralliens, visitez l’île la plus branchée d’Asie.</p>
                 <div class="containerDroit">
-                    <h3>Accès</h3>
-                    <p>3 rue njponj</p>
-                    <p>En transports en commun<br> C1, C2, C3</p>
-                    <p>En voiture<br> Rocade est sortie 14<br> Parking payant la Part Dieu</p>
+                    <h3>A savoir</h3>
+                    <p>45 minutes</p>
+                    <p>4 personnes maximum</p>
+                    <p>A partir de 8 ans</p>
+                    <p>casques de réalité virtuelle Oculus Quest 2®</p>
                 </div>
-                <p>egr rgregg ervevz rzrgzr</p>
+                <p>Venez découvrir cette expérience ou réservez dès maintenant</p>
                 <button type="button" class="boutton-vert btn btn-primary btn-lg" @click="$router.push('/reservation')">Je Reserve</button>
             </div>
             <div class="slider">
@@ -61,18 +62,18 @@
                     <tbody>
                         <tr>
                         <th scope="row">1 personne</th>
-                        <td>10 €</td>
-                        <td>12 €</td>
+                        <td>30€/pers</td>
+                        <td>32€/pers</td>
                         </tr>
                         <tr>
                         <th scope="row">2 personne</th>
-                        <td>18 €</td>
-                        <td>20 €</td>
+                        <td>27€/pers</td>
+                        <td>28€/pers</td>
                         </tr>
                         <tr>
                         <th scope="row">3 personne</th>
-                        <td>26 €</td>
-                        <td>30 €</td>
+                        <td>23€/pers</td>
+                        <td>25€/pers</td>
                         </tr>
                     </tbody>
                 </table>
@@ -90,38 +91,38 @@
                     <tbody>
                         <tr>
                         <th scope="row">Lundi</th>
-                        <td>fermé</td>
-                        <td>10h-20h</td>
+                        <td>10h-22h</td>
+                        <td>10h-23h</td>
                         </tr>
                         <tr>
                         <th scope="row">Mardi</th>
-                        <td>11h-18h</td>
-                        <td>10h-20h</td>
+                        <td>fermé</td>
+                        <td>fermé</td>
                         </tr>
                         <tr>
                         <th scope="row">Mercredi</th>
-                        <td>10h-20h</td>
-                        <td>10h-21h</td>
+                        <td>10h-22h</td>
+                        <td>10h-23h</td>
                         </tr>
                         <tr>
                         <th scope="row">Jeudi</th>
-                        <td>11h-20h</td>
-                        <td>10h-20h</td>
+                        <td>11h-22h</td>
+                        <td>10h-23h</td>
                         </tr>
                         <tr>
                         <th scope="row">Vendredi</th>
-                        <td>10h-21h</td>
-                        <td>10h-21h</td>
+                        <td>10h-00h</td>
+                        <td>10h-01h</td>
                         </tr>
                         <tr>
                         <th scope="row">Samedi</th>
-                        <td>10h-21h</td>
-                        <td>10h-21h</td>
+                        <td>10h-00h</td>
+                        <td>10h-01h</td>
                         </tr>
                         <tr>
                         <th scope="row">Dimanche</th>
-                        <td>10h-18h</td>
-                        <td>10h-20h</td>
+                        <td>10h-22h</td>
+                        <td>10h-01h</td>
                         </tr>
                     </tbody>
                 </table>
@@ -145,7 +146,7 @@
                                 <div class="carousel-item active">
                                     <div class="row">
                                         <div class="col-md-3">
-                                            <h3>Bali</h3>
+                                            <h3>Machu pichu</h3>
                                             <a href="#">
                                                 <img src="../assets/images/site_photos/experience3.png" alt="Image" style="max-width:100%;">
                                             </a>
@@ -157,13 +158,13 @@
                                             </a>
                                         </div>
                                         <div class="col-md-3">
-                                            <h3>Bali</h3>
+                                            <h3>Tokyo</h3>
                                             <a href="#">
                                                 <img src="../assets/images/site_photos/experience4.png" alt="Image" style="max-width:100%;">
                                             </a>
                                         </div>
                                         <div class="col-md-3">
-                                            <h3>Bali</h3>
+                                            <h3>New york</h3>
                                             <a href="#">
                                                 <img src="../assets/images/site_photos/experience2.png" alt="Image" style="max-width:100%;">
                                             </a>
@@ -182,19 +183,19 @@
                                             </a>
                                         </div>
                                         <div class="col-md-3">
-                                            <h3>Bali</h3>
+                                            <h3>New York</h3>
                                             <a href="#">
                                                 <img src="../assets/images/site_photos/experience2.png" alt="Image" style="max-width:100%;">
                                             </a>
                                         </div>
                                         <div class="col-md-3">
-                                            <h3>Bali</h3>
+                                            <h3>Machu pichu</h3>
                                             <a href="#">
                                                 <img src="../assets/images/site_photos/experience3.png" alt="Image" style="max-width:100%;">
                                             </a>
                                         </div>
                                         <div class="col-md-3">
-                                            <h3>Bali</h3>
+                                            <h3>Tokyo</h3>
                                             <a href="#">
                                                 <img src="../assets/images/site_photos/experience4.png" alt="Image" style="max-width:100%;">
                                             </a>

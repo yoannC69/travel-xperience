@@ -36,45 +36,45 @@
                     <tbody>
                         <tr>
                         <th scope="row">Lundi</th>
-                        <td>fermé</td>
-                        <td>10h-20h</td>
+                        <td>10h-22h</td>
+                        <td>10h-23h</td>
                         </tr>
                         <tr>
                         <th scope="row">Mardi</th>
-                        <td>11h-18h</td>
-                        <td>10h-20h</td>
+                        <td>fermé</td>
+                        <td>fermé</td>
                         </tr>
                         <tr>
                         <th scope="row">Mercredi</th>
-                        <td>10h-20h</td>
-                        <td>10h-21h</td>
+                        <td>10h-22h</td>
+                        <td>10h-23h</td>
                         </tr>
                         <tr>
                         <th scope="row">Jeudi</th>
-                        <td>11h-20h</td>
-                        <td>10h-20h</td>
+                        <td>11h-22h</td>
+                        <td>10h-23h</td>
                         </tr>
                         <tr>
                         <th scope="row">Vendredi</th>
-                        <td>10h-21h</td>
-                        <td>10h-21h</td>
+                        <td>10h-00h</td>
+                        <td>10h-01h</td>
                         </tr>
                         <tr>
                         <th scope="row">Samedi</th>
-                        <td>10h-21h</td>
-                        <td>10h-21h</td>
+                        <td>10h-00h</td>
+                        <td>10h-01h</td>
                         </tr>
                         <tr>
                         <th scope="row">Dimanche</th>
-                        <td>10h-18h</td>
-                        <td>10h-20h</td>
+                        <td>10h-22h</td>
+                        <td>10h-01h</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="containerDroit">
                 <h3>Accès</h3>
-                <p>3 rue njponj</p>
+                <p>3 rue des chevreuils</p>
                 <p>En transports en commun<br> C1, C2, C3</p>
                 <p>En voiture<br> Rocade est sortie 14<br> Parking payant la Part Dieu</p>
             </div>

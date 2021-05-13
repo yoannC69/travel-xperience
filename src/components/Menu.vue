@@ -14,7 +14,7 @@
                     <router-link class="nav-link" to="/">Home</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link class="nav-link" to="/about">Qu'est ce que c'est ?</router-link>
+                    <router-link class="nav-link" to="/about">Le concept</router-link>
                 </li>
                 <li class="nav-item">
                     <router-link class="nav-link" to="/Experiences">Nos experiences</router-link>

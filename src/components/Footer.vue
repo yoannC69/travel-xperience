@@ -58,6 +58,7 @@ export default {
         color: white;
         padding-top: 2rem;
         padding-bottom: 2rem;
+        flex-wrap: wrap;
     }
     .container-picto{
         display: flex;
@@ -75,11 +76,13 @@ export default {
         margin-top: 3rem;
     }
     .imageRS{
-        width: 3em;
-        height: 3em;
+        width: 30%;
+        height: 30%;
     }
     .btn-footer{
         background-color: #003F72 !important;
         border: none !important;
+        border-radius: 50px !important;
+        width: 13rem;
     }
 </style>
