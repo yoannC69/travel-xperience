@@ -173,6 +173,8 @@
 .contenu-tarif-horaire{
     display: flex;
     flex-direction:row;
-    flex-wrap: wrap;
+}
+.containerGauche{
+    width: 40%
 }
 </style>

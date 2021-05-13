@@ -9,15 +9,17 @@
 
 
     <div class="description">
-        <div class="contenu-description">
-            <div class="descriptionTexte">
+        <div class="contenu-home">
+            <div class="petitContainerTexte">
                 <h1 class="titre">Travel Xperience : le voyage en immersion</h1>
                 <p>Avec Travel Xperience, plongez dans une expériencehors du commun.Découvrez une palette de 6 voyages tous plus intensesles uns que lesautres. Envolez-vous pour Bali, Tokyo, New-York, l'Antarctique,un safari enTanzanie ou encore la découverte du Machu Picchu. Découvrez plus en détail notre offre entre visitesculturelles, découvertesculinaires et escapades à couper le souffle </p>
             </div>
             <div class="button-end">
                 <button type="button" class="boutton-blanc btn btn-primary btn-lg" @click="$router.push('/about')">Plus de details</button>
             </div>
-                <div class="container-image-home">
+            <div class="fakediv">
+            </div>
+              <div class="container-image-home">
                 <img class="imageContainer" src="../assets/images/site_photos/accueil1.png" alt="photo concept">
             </div>
         </div>
@@ -53,6 +55,8 @@
         <div class="contenu-autre">
             <div class="container-image-home2">
                 <img class="image-home2" src="../assets/images/site_photos/accueil2.png" alt="photo concept">
+            </div>
+            <div class="fakediv">
             </div>
             <div class="btn-container-home">
                 <button type="button" class="boutton-blanc btn btn-primary btn-lg" @click="$router.push('/about')">Plus de details</button>
@@ -94,6 +98,7 @@
   margin-bottom : 5rem;
   margin-right: auto;
   position: relative;
+  flex-wrap: wrap;
 }
 .contenu-home{
   display: flex;
@@ -105,12 +110,14 @@
 }
 .contenu-autre{
   display: flex;
-  justify-content: space-between;
+  flex-wrap:wrap;
+  justify-content: space-around;
   width: 100%;
+  position:relative;
 }
 
 .imageContainer{
-  width: 35em;
+  width: 30em;
 }
 
 .images{
@@ -133,9 +140,8 @@
 }
 
 .descriptionTexte{
-  width: 35%;
-  padding-right:5em;
-  padding-bottom: 5rem;
+  width: 30em;
+  padding: 0em 5em ;
 }
 .section-video{
   height: 96vh;
@@ -157,6 +163,10 @@
   width: 13rem;
   border: none !important;
 }
+.boutton-blanc:hover{
+  background-color: black !important;
+  color: white !important;
+}
 .boutton-blanc-border {
   margin-bottom: 3rem;
   margin-top: 2rem;
@@ -167,15 +177,22 @@
   border-color: black !important;
 }
 .text-center-home{
-  align-items: center;
+  display:flex;
+  justify-content: center;
 }
 .titreExperience{
   margin: 4rem;
 }
 .button-end{
-    display: flex;
     align-self: flex-end;
-    width: 60%;
+    width: 30em;
+    text-align: center;
+}
+.fakediv{
+  width: 30em;
+}
+.petitContainerTexte{
+ width: 30em;
 }
 .container-image-home{
     position: absolute;
@@ -185,9 +202,11 @@
 }
 
 .btn-container-home{
-    width:30%;
+    width: 30em;
     align-self: flex-end;
     text-align: center;
+    display:flex;
+    justify-content: center;
 }
 
 .image-home2{
@@ -198,11 +217,29 @@
     width: 30em;
 }
 .container-image-home2{
-    position: relative;
-    width:35%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99;
 }
 
+@media screen and (max-width: 1050px) {
+  .image-home2 {
+    display: none;
+  }
+  .imageContainer{
+    display : none;
+  }
+}
 
+@media screen and (max-width: 1350px) {
+  .image-home2 {
+    display: none;
+  }
+  .imageContainer{
+    display : none;
+  }
+}
 
 
 </style>

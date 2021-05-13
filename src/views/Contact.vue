@@ -118,4 +118,14 @@
   width: 13rem;
   border: none !important;
 }
+.containerGauche{
+    width: 40%;
+}
+.containerDroit{
+    width: 40%;
+}
+.yellowBox{
+    display: flex;
+    flex-wrap: wrap;
+}
 </style>

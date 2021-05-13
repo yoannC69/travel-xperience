@@ -39,7 +39,7 @@
                 <div class="last-container-img-about">
                     <img class="imageContainer4" width="800px" src="../assets/images/site_photos/concept4.png" alt="photo concept">
                 </div>
-                <div class="text-center">
+                <div class="text-center-btn">
                     <button type="button" class="boutton-yellow btn btn-primary btn-lg">Plus de details</button>
                 </div>
                 <div class="last-descriptionTexte-about">
@@ -122,6 +122,11 @@
         align-self: flex-end;
         text-align: center;
     }
+    .text-center-btn{
+        width:30%;
+        align-self: flex-end;
+        text-align: center;
+    }
     .text-center-home{
         text-align: center;
     }
@@ -129,4 +134,31 @@
         width:40%;
         padding-right:5em;
     }
+
+    @media screen and (max-width: 1350px) {
+  .imageContainer4 {
+    display: none;
+  }
+  .contenu-about2{
+        justify-content: center;
+        flex-wrap:wrap ;
+    }
+    .last-container-img-about{
+        display: none;
+    }
+    .text-center-btn{
+    width:80%;
+    }
+    .last-descriptionTexte-about{
+    width:40%;
+    padding: 0px;
+    text-align: center;
+    }
+    .container-img-about{
+        display:none;
+    }
+    .descriptionTexte-about-1{
+    width:100%;
+    }
+}
 </style>
