@@ -21,12 +21,7 @@ app.post("/reservations", (req, res) => {
   const reservations = readReservations();
 
   // test d'unicité email
-  const alreadyEmail = reservations.find((reservation) => reservation.email === body.email)
   
-  //si l'email n'existe pas cela renvoie undefined
-  if(alreadyEmail !== undefined){
-    return res.json({messageError: 'cet email est déja utilisé'})
-  } else {
   
   // Création du nouveau user
   const newReservations = {
@@ -44,7 +39,7 @@ app.post("/reservations", (req, res) => {
   // Ecris dans le fichier pour insérer la liste des users
   fs.writeFileSync("./reservations.json", JSON.stringify(reservations, null, 4));
   res.json({message: 'Réponse enregistré'});
-}});
+});
 
 app.put("/reservations/:id", (req, res) => {
   const body = req.body;
