@@ -1,15 +1,20 @@
-const fs = require("fs");
+//const fs = require("fs");
 const express = require("express");
 const app = express();
 const cors = require('cors');
 const fileUpload = require('express-fileupload');
+const db = require("./models");
+require("./routes/reservation.routes")(app);
 
 app.use(cors());
 app.use(express.json());
 app.use(fileUpload());
 
+// parse requests of content-type - application/x-www-form-urlencoded
+app.use(express.urlencoded({ extended: true }));
 
-const readReservations = () => JSON.parse(fs.readFileSync("./reservations.json").toString());
+
+/*const readReservations = () => JSON.parse(fs.readFileSync("./reservations.json").toString());
 
 app.get("/reservations", (req, res) => {
   res.json(readReservations());
@@ -94,6 +99,10 @@ app.delete("/reservations/:id", (req, res) => {
   // Ecris dans le fichier pour insérer la liste des users
   fs.writeFileSync("./reservation.json", JSON.stringify(deleteReservation, null, 4));
   res.json(deleteReservation);
-});
+});*/
 
-app.listen(6929, () => console.log("server is running"));
+db.sequelize.sync();
+
+const port = process.env.PORT || 6928
+app.listen(port)
+console.log(`app is listening on port : ${port}`)
