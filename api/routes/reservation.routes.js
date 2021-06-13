@@ -26,4 +26,4 @@ module.exports = app => {
     router.delete("/",auth, reservations.deleteAll);
 
     app.use('/reservations', router);
-  };
+  };  
