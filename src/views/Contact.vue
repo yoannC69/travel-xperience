@@ -16,8 +16,8 @@
             </div>
             <div class="containerDroit">
                <GmapMap
-                :center="{lat:10, lng:10}"
-                :zoom="7"
+                :center="{lat:45.764043, lng:4.835659}"
+                :zoom="13"
                 style="width:700px; height:500px;"
                 ></GmapMap> 
             </div>

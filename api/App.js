@@ -1,17 +1,22 @@
 //const fs = require("fs");
 const express = require("express");
 const app = express();
-const cors = require('cors');
+//const cors = require('cors');
 const fileUpload = require('express-fileupload');
 const db = require("./models");
+
+// parse requests of content-type - application/json
+app.use(express.json());
+
 require("./routes/reservation.routes")(app);
 
-app.use(cors());
-app.use(express.json());
-app.use(fileUpload());
+
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true }));
+
+//app.use(cors());
+app.use(fileUpload());
 
 
 /*const readReservations = () => JSON.parse(fs.readFileSync("./reservations.json").toString());

@@ -1,37 +1,36 @@
 const service = require("../services/reservation.services");
-const Op = db.Sequelize.Op;
  
 // Create and Save a new reservation
 exports.create = (req, res) => {
-  service.create
+  service.create(req, res)
 };
 
 // Retrieve all reservations from the database.
 exports.findAll = (req, res) => {
-  service.findAll
+  service.findAll(req, res)
 };
 
 // Find a single reservation with an id
 exports.findOne = (req, res) => {
-  service.findOne
+  service.findOne(req, res)
 };
 
 // Update a reservation by the id in the request
 exports.update = (req, res) => {
-  service.update
+  service.update(req, res)
 };
 
 // Delete a reservation with the specified id in the request
 exports.delete = (req, res) => {
-  service.delete
+  service.delete(req, res)
 };
 
 // Delete all reservations from the database.
 exports.deleteAll = (req, res) => {
-  service.deleteAll
+  service.deleteAll(req, res)
 }
 
 // Find all by date reservations
 exports.findAllByDate = (req, res) => {
-  service.findAllByDate
+  service.findAllByDate(req, res)
 };

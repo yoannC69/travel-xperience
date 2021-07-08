@@ -66,16 +66,9 @@ exports.create = (req, res) => {
 
 // Retrieve all reservations from the database.
 exports.findAll = (req, res) => {
-    const reservation = {
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
-      numero: req.body.numero,
-      date_reservation: req.body.date_reservation,
-      heure: req.body.heure,
-      experience: req.body.experience
-    };
+
     
-    Reservations.findAll(reservation)
+    Reservations.findAll()
         .then(data => {
           res.send(data);
         })
@@ -91,7 +84,7 @@ exports.findAll = (req, res) => {
 exports.findOne = (req, res) => {
     const id = req.params.id;
   
-    res.findByPk(id)
+    Reservations.findByPk(id)
       .then(data => {
         res.send(data);
       })
